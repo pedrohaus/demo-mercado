@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mercado</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Cabeçalho de infos do sistema  -->
+        <header>
+            <div class="title">
+                <h2> Lista de Compras </h2>
+            </div>
+            <div class="banner">
+                <img src="https://images.contentstack.io/v3/assets/blt45c082eaf9747747/bltbcca43584b660977/5de0b6aa703bd50385f981ad/Header-5.jpg?width=1200&height=630&fit=crop"
+                    alt="y">
+            </div>
+        </header>
+
+        <!-- Campos p/ permitir o usuario adicionar produto -->
+        <section class="newItem">
+            <input type="text" id="newProduct" placeholder="Adicione o novo produto:">
+            <input type="text" id="newQuantity" placeholder="Quantidade:">
+            <input type="text" id="newPrice" placeholder="Valor:">
+            <button class="addBtn" onclick="funcaoTeste()"> Adicionar</button>
+        </section>
+
+        <!-- Lista de itens existentes -->
+        <section class="items">
+            <table id="myTable">
+                <tr>
+                    <th> Id </th>
+                    <th> Nome </th>
+                    <th> Quantidade </th>
+                    <th> Valor </th>
+                    <th> <img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+                <!--<tr>
+                    <td> Banana </td>
+                    <td> 20 </td>
+                    <td> 10.50 </td>
+                    <td> X </td>
+                </tr>-->
+            </table>
+        </section>
+
+        <script src="script.js"></script> 
+
+    </body>
+</html>
