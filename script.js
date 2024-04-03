@@ -4,7 +4,7 @@
 const getList = async () => {
     let url = "http://127.0.0.1:8080/api/produtos/buscar-produtos";
     fetch(url, { 
-        method: "get" 
+        method: "get"
     })
     .then( (response) => response.json() )
     .then( (jsonData) => {
